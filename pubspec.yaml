@@ -1,0 +1,71 @@
+name: organize_my_life
+description: "OrganizeMyLife — agenda, tarefas, lembretes e finanças pessoais, num só app."
+publish_to: "none"
+version: 0.1.0+1
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management & DI
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+
+  # Navigation
+  go_router: ^14.2.0
+
+  # Backend / Auth / Realtime sync
+  firebase_core: ^3.3.0
+  firebase_auth: ^5.1.4
+  cloud_firestore: ^5.2.1
+  firebase_messaging: ^15.0.4
+  firebase_crashlytics: ^4.0.4
+
+  # Local notifications (reminders scheduled on-device)
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+
+  # UI / Design system
+  google_fonts: ^6.2.1
+  fl_chart: ^0.68.0
+  table_calendar: ^3.1.2
+
+  # i18n
+  intl: any
+
+  # Utils
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+  equatable: ^2.0.5
+  shared_preferences: ^2.2.3
+  intl_utils: ^2.8.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.11
+  riverpod_generator: ^2.4.0
+  freezed: ^2.5.5
+  json_serializable: ^6.8.0
+  flutter_launcher_icons: ^0.14.1
+
+flutter:
+  uses-material-design: true
+  generate: true # habilita flutter gen-l10n a partir de l10n.yaml
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+# Config do `dart run flutter_launcher_icons` — gera os ícones nativos
+# (Android/iOS) a partir de assets/icons/app_icon.jpg.
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.jpg"

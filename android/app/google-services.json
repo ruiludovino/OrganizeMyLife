@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "532120489204",
+    "project_id": "organizemyliferui",
+    "storage_bucket": "organizemyliferui.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532120489204:android:f786a5d6102a2f1a0ca2a1",
+        "android_client_info": {
+          "package_name": "com.organizemylife.organize_my_life"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVPyAWhlCNIdCc7s0NR5UdFALVmkbhZbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
